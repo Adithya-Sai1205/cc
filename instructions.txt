@@ -1,0 +1,33 @@
+Programming Assignment 2 Submission
+
+GitHub Repository:
+-------------------
+
+
+Step-by-Step Instructions:
+--------------------------
+1. Setting Up the Cloud Environment:
+   - Launch four EC2 instances for parallel training and one EC2 instance for the prediction application.
+   - Use an SSH client to connect to your instances.
+
+2. Model Training (Parallel on 4 EC2 Instances):
+   - Clone the GitHub repository to your EC2 instances.
+   - Navigate to the project directory.
+   - Compile and run the WineQualityModelTraining.java file to train the model in parallel.
+
+3. Saving and Loading the Model:
+   - The trained model will be saved automatically in an S3 bucket (specified in the Java code).
+   - For loading the model, use the specified S3 path in the WineQualityPrediction.java file.
+
+4. Prediction Application (On a Single EC2 Instance):
+   - Clone the GitHub repository to your prediction EC2 instance.
+   - Navigate to the project directory.
+   - Compile and run the WineQualityPrediction.java file to perform predictions.
+   - Optionally, build and run the Docker container (instructions below).
+
+
+
+Note:
+- Replace [Insert GitHub Repository Link] and [Insert Docker Hub Container Link] with the actual links.
+- Ensure that your AWS credentials and permissions are correctly set up on each EC2 instance.
+
